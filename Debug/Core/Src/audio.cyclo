@@ -1,0 +1,5 @@
+../Drivers/CMSIS/Include/core_cm3.h:1511:22:__NVIC_EnableIRQ	2
+../Core/Src/audio.c:69:6:AudioInit	3
+../Core/Src/audio.c:124:6:AudioStart	1
+../Core/Src/audio.c:130:6:AudioStop	1
+../Core/Src/audio.c:136:6:DMA1_Channel2_IRQHandler	3

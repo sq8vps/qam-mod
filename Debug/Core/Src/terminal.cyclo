@@ -1,0 +1,4 @@
+../Core/Src/terminal.c:6:6:TermSendToAll	4
+../Core/Src/terminal.c:16:6:TermSendNumberToAll	5
+../Core/Src/terminal.c:29:6:TermHandleSpecial	8
+../Core/Src/terminal.c:63:6:TermParse	15

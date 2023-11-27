@@ -328,5 +328,3 @@ static void handleUsbInterrupt(Uart *port)
 /**
   * @}
   */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

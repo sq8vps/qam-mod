@@ -1,0 +1,10 @@
+../Drivers/CMSIS/Include/core_cm3.h:1511:22:__NVIC_EnableIRQ	2
+../Core/Src/modulator.c:96:6:ModulatorInit	1
+../Core/Src/modulator.c:144:6:ModulatorPut	5
+../Core/Src/modulator.c:194:6:ModulatorSetMode	3
+../Core/Src/modulator.c:215:10:ModulatorSetBaudrate	2
+../Core/Src/modulator.c:226:6:ModulatorStartTimer	2
+../Core/Src/modulator.c:237:6:ModulatorStop	1
+../Core/Src/modulator.c:242:16:randomCallback	1
+../Core/Src/modulator.c:247:6:ModulatorStartRandom	1
+../Core/Src/modulator.c:253:6:TIM1_UP_IRQHandler	2

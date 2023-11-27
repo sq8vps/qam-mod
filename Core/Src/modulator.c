@@ -1,3 +1,22 @@
+/*
+Copyright 2023 Piotr Wilkon
+This file is part of QAM Modulator Controller.
+
+QAM Modulator Controller is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+
+QAM Modulator Controller is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with QAM Modulator Controller.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+
 #include "modulator.h"
 #include "stm32f1xx.h"
 #include "common.h"
@@ -216,8 +235,10 @@ uint32_t ModulatorSetBaudrate(uint32_t baud)
 {
 	//assume the timer runs at 1 MHz
 	uint32_t arr = 1000000 / baud;
+	if(arr > 65535)
+		arr = 65535;
 	TIM1->ARR = arr;
-	baudrate = arr * 1000000;
+	baudrate = 1000000 / arr;
 	return baudrate;
 }
 
